@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.9"
 
 services:
   database:
@@ -21,7 +21,7 @@ services:
     deploy:
       mode: global
       update_config:
-        parallelism: 2
+        parallelism: 1
         delay: 5s
         order: start-first
     ports:
